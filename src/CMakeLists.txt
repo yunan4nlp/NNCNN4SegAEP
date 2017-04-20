@@ -4,4 +4,4 @@ include_directories(
 )
 
 add_subdirectory(NNCNN4Seg)
-add_subdirectory(NNCNN4SegAEP)
+add_subdirectory(NNRNN4Seg)
