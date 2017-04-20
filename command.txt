@@ -1,0 +1,3 @@
+cmake .. -DEIGEN3_INCLUDE_DIR=C:\eigen -DN3L_INCLUDE_DIR=D:\LibN3L-2.0
+
+-l -train E:\liuying_data\phone_corpus\phone_test_seg_att_evl_polarity.txt -dev E:\liuying_data\phone_corpus\phone_test_seg_att_evl_polarity.txt -test E:\liuying_data\phone_corpus\phone_test_seg_att_evl_polarity.txt -option E:\liuying_data\option\option.debug
