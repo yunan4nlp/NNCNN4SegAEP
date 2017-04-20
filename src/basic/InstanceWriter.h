@@ -31,7 +31,7 @@ public:
 		int eval_num = pInstance->m_evalutions.size();
 		const vector<string> evals = pInstance->m_evalutions;
 		for(int idx = 0; idx < eval_num; idx++) {
-			m_outf << evals[idx] << " ";
+			m_outf << "[e]" << evals[idx] << " ";
 		}
 		m_outf << pInstance->m_polarity << endl;
 	  return 0;
