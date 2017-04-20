@@ -118,8 +118,8 @@ void Classifier::train(const string& trainFile, const string& devFile, const str
 	//std::cout << "Dev example number: " << trainInsts.size() << std::endl;
 	//std::cout << "Test example number: " << trainInsts.size() << std::endl;
 
-	//addTestAlpha(devInsts);
-	//addTestAlpha(testInsts);
+	addTestAlpha(devInsts);
+	addTestAlpha(testInsts);
 	for (int idx = 0; idx < otherInsts.size(); idx++) {
 		addTestAlpha(otherInsts[idx]);
 	}
