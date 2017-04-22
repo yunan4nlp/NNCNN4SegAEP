@@ -5,5 +5,6 @@ include_directories(
 
 add_subdirectory(NNCNN4Seg)
 add_subdirectory(NNCNN4SegA)
+add_subdirectory(NNCNN4SegE)
 add_subdirectory(NNRNN4Seg)
 add_subdirectory(NNLSTM4Seg)
