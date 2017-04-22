@@ -147,6 +147,7 @@ void Classifier::train(const string& trainFile, const string& devFile, const str
 	vector<vector<Instance> > otherInstances(otherInsts.size());
 
 	m_word_stats[unknownkey] = m_options.wordCutOff + 1;
+	m_eval_char_stats[unknownkey] = m_options.evalCharContext + 1;
 	m_driver._modelparams.wordAlpha.initial(m_word_stats, m_options.wordCutOff);
 	m_driver._modelparams.evalCharAlpha.initial(m_eval_char_stats, m_options.evalCharCutOff);
 	m_driver._modelparams.evalChars.initial(&m_driver._modelparams.evalCharAlpha, m_options.evalCharEmbSize, m_options.evalCharEmbFineTune);
